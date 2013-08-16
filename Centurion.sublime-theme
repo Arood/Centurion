@@ -15,7 +15,7 @@
         "tab_overlap":0,
         "tab_width": 180,
         "tab_min_width": 45,
-        "tab_height": 28,
+        "tab_height": 29,
         "mouse_wheel_switch": false
     },
     {
@@ -68,9 +68,9 @@
     // Tab close button
     {
         "class": "tab_close_button",
-        "layer0.texture": "Theme - Centurion/Centurion/cross.png",
-        "layer0.opacity": 0,
-        "layer0.tint": [255,255,255]
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-remove.png",
+        "layer0.opacity": 0.2,
+        "layer0.tint": [150,150,150]
     },
     {
         "class": "tab_close_button",
@@ -81,20 +81,20 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "layer0.opacity": 1,
-        "layer0.tint": [201,74,81]
+        "layer0.tint": [247,123,44]
 
     },
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.7
+        "layer0.opacity": 1
     },
     // Tab dirty button
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/circle.png",
-        "layer0.tint": [81,166,203],
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-pencil.png",
+        "layer0.tint": [150,212,67],
         "layer0.opacity": 1
     },
     {
@@ -107,7 +107,7 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty", "hover"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/cross.png",
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-remove.png",
         "layer0.opacity": 1.0
     },
     {
@@ -148,7 +148,7 @@
         "fade": true,
         "fg": [170, 170, 170],
         "shadow_color": [25, 25, 25],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [0, 0]
     },
     {
         "class": "tab_label",
@@ -169,7 +169,7 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - Centurion/Centurion/arrow.png",
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-collapse-alt.png",
         "layer0.opacity": 0.4,
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
@@ -182,7 +182,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Centurion/Centurion/arrow-down.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-expand-alt.png"
     },
     {
         "class": "fold_button_control",
@@ -505,7 +505,7 @@
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "layer0.opacity": 0.6,
-        "layer0.texture": "Theme - Centurion/Centurion/cross.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-remove.png"
     },
     // Sidebar file dirty
     {
@@ -513,31 +513,31 @@
         "attributes": ["dirty"],
         "layer0.texture": "Theme - Centurion/Centurion/circle.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [81,166,203]
+        "layer0.tint": [150,212,67]
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/cross.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-remove.png"
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/cross.png",
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-remove.png",
         "layer0.opacity": 1.0
     },
     // Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Centurion/Centurion/cross.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-remove.png"
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/cross.png",
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-remove.png",
         "layer0.opacity": 1.0
     },
 
@@ -549,15 +549,15 @@
     {
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-closed.png",
-        "layer0.tint": [90,147,94],
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-right.png",
+        "layer0.tint": [255,0,102],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.tint":[88,186,102]
+        "layer0.tint":[255,0,102]
     },
     {
         "class": "disclosure_button_control",
@@ -567,7 +567,7 @@
     {
         "class": "disclosure_button_control",
         "settings": ["soda_folder_icons"],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-closed.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-right.png"
     },
     {
         "class": "disclosure_button_control",
@@ -578,13 +578,13 @@
         "class": "disclosure_button_control",
         "settings": ["soda_folder_icons"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-closed.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-down.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-down.png"
     },
     {
         "class": "disclosure_button_control",
@@ -595,28 +595,28 @@
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-down.png"
     },
     // Sidebar folder open
     {
         "class": "disclosure_button_control",
         "settings": ["soda_folder_icons"],
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-down.png"
     },
     {
         "class": "disclosure_button_control",
         "settings": ["soda_folder_icons"],
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-down.png"
     },
     {
         "class": "disclosure_button_control",
         "settings": ["soda_folder_icons"],
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
+        "layer0.texture": "Theme - Centurion/Centurion/fontawesome-arrow-down.png"
     },
 
 //
@@ -709,14 +709,14 @@
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [90,147,94]
+        "layer0.tint": [34,54,8]
     },
     {
         "class": "quick_panel_label",
         "fg": [210, 210, 210, 255],
-        "match_fg": [126,221,138, 255],
+        "match_fg": [150,212,67, 255],
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [126,221,138, 255]
+        "selected_match_fg": [150,212,67, 255]
     },
     {
         "class": "quick_panel_path_label",
@@ -745,7 +745,7 @@
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [90,147,94]
+        "layer0.tint": [34,54,8]
     },
 
 //
@@ -765,14 +765,14 @@
     {
         "class": "auto_complete_label",
         "fg": [210, 210, 210, 255],
-        "match_fg": [126,221,138, 255],
+        "match_fg": [150,212,67, 255],
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [126,221,138, 255]
+        "selected_match_fg": [150,212,67, 255]
     },
     {
         "class": "table_row",
         "layer0.texture": "",
-        "layer0.tint":[86,163,102],
+        "layer0.tint":[34,54,8],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [3, 1]
     },
